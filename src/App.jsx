@@ -242,15 +242,15 @@ function App() {
             Fuchsia-Red-Orange
           </button>
           <button
-            className="bg-gradient-to-bl from-emerald-400 via-cyan-400 to-blue-600 text-white p-3 px-5 rounded hover:from-emerald-300 hover:via-cyan-300 hover:to-blue-500 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-cyan-400/30 shadow-blue-600/30"
+            className="bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 text-white p-3 px-5 rounded hover:from-violet-600 hover:via-lime-200 hover:to-violet-600 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-cyan-400/30 shadow-blue-600/30"
             onClick={() => {
               setColor(
-                "bg-gradient-to-bl from-emerald-400 via-cyan-400 to-blue-600"
+                "bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700"
               );
               setTextColor("text-white");
             }}
           >
-            Emerald-Cyan-Blue
+            Rainbow
           </button>
           <button
             className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 text-white p-3 px-5 rounded hover:from-gray-800 hover:via-gray-600 hover:to-gray-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-gray-900/30 shadow-gray-700/30 shadow-gray-500/30"
@@ -297,7 +297,7 @@ function App() {
             Yellow-Orange-Red
           </button>
           <button
-            className="bg-gradient-to-b from-emerald-400 via-teal-400 to-cyan-500 text-white p-3 px-5 rounded hover:from-emerald-300 hover:via-teal-300 hover:to-cyan-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-teal-400/30 shadow-cyan-500/30"
+            className="bg-gradient-to-b from-purple-400 via-teal-400 to-cyan-500 text-white p-3 px-5 rounded hover:from-emerald-300 hover:via-teal-300 hover:to-cyan-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-teal-400/30 shadow-cyan-500/30"
             onClick={() => {
               setColor(
                 "bg-gradient-to-b from-purple-400 via-teal-400 to-cyan-500"
