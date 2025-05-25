@@ -1,0 +1,206 @@
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const [color, setColor] = useState("bg-neutral-200");
+  const [textColor, setTextColor] = useState("text-black");
+
+  return (
+    <div
+      className={`flex flex-col gap-10 items-center justify-center h-[150vh] md:h-screen transition duration-300 ${color}`}
+    >
+      <div className="flex flex-col bg-neutral-100 border border-neutral-300 p-2 px-4 md:p-10 rounded-lg shadow-2xl shadow-neutral-300 gap-10">
+        <h1 className="text-2xl font-bold text-center text-shadow-lg ">
+          Choose a Background{" "}
+          <span className={`${textColor} text-shadow-none`}>Color</span>
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ">
+          <button
+            className="bg-red-700 text-white p-1 md:p-3 md:px-5 rounded hover:bg-red-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-red-500/50 hover:shadow-red-500/50 "
+            onClick={() => {
+              setColor("bg-red-700");
+              setTextColor("text-red-700");
+            }}
+          >
+            Red
+          </button>
+          <button
+            className="bg-green-700 text-white p-3 px-5 rounded hover:bg-green-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-green-500/50 hover:shadow-green-500/50"
+            onClick={() => {
+              setColor("bg-green-700");
+              setTextColor("text-green-700");
+            }}
+          >
+            Green
+          </button>
+          <button
+            className="bg-yellow-500 text-white p-3 px-5 rounded hover:bg-yellow-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-yellow-400/50 hover:shadow-yellow-400/50"
+            onClick={() => {
+              setColor("bg-yellow-500");
+              setTextColor("text-yellow-500");
+            }}
+          >
+            Yellow
+          </button>
+          <button
+            className="bg-purple-700 text-white p-3 px-5 rounded hover:bg-purple-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/50"
+            onClick={() => {
+              setColor("bg-purple-700");
+              setTextColor("text-purple-700");
+            }}
+          >
+            Purple
+          </button>
+          <button
+            className="bg-orange-500 text-white p-3 px-5 rounded hover:bg-orange-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-orange-500/50 hover:shadow-orange-500/50"
+            onClick={() => {
+              setColor("bg-orange-500");
+              setTextColor("text-orange-500");
+            }}
+          >
+            Orange
+          </button>
+          <button
+            className="bg-blue-500 text-white p-3 px-5 rounded hover:bg-blue-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/50"
+            onClick={() => {
+              setColor("bg-blue-500");
+              setTextColor("text-blue-500");
+            }}
+          >
+            Blue
+          </button>
+          <button
+            className="bg-gray-500 text-white p-3 px-5 rounded hover:bg-gray-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-gray-500/50 hover:shadow-gray-500/50"
+            onClick={() => {
+              setColor("bg-gray-500");
+              setTextColor("text-gray-500");
+            }}
+          >
+            Gray
+          </button>
+          <button
+            className="bg-pink-500 text-white p-3 px-5 rounded hover:bg-pink-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-pink-500/50 hover:shadow-pink-500/50"
+            onClick={() => {
+              setColor("bg-pink-500");
+              setTextColor("text-pink-500");
+            }}
+          >
+            Pink
+          </button>
+          <button
+            className="bg-teal-500 text-white p-3 px-5 rounded hover:bg-teal-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-teal-500/50 hover:shadow-teal-500/50"
+            onClick={() => {
+              setColor("bg-teal-500");
+              setTextColor("text-teal-500");
+            }}
+          >
+            Teal
+          </button>
+          <button
+            className="bg-indigo-700 text-white p-3 px-5 rounded hover:bg-indigo-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-indigo-500/50 hover:shadow-indigo-500/50"
+            onClick={() => {
+              setColor("bg-indigo-700");
+              setTextColor("text-indigo-700");
+            }}
+          >
+            Indigo
+          </button>
+          <button
+            className="bg-lime-500 text-white p-3 px-5 rounded hover:bg-lime-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-lime-500/50 hover:shadow-lime-500/50"
+            onClick={() => {
+              setColor("bg-lime-500");
+              setTextColor("text-lime-500");
+            }}
+          >
+            Lime
+          </button>
+          <button
+            className="bg-cyan-500 text-white p-3 px-5 rounded hover:bg-cyan-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50"
+            onClick={() => {
+              setColor("bg-cyan-500");
+              setTextColor("text-cyan-500");
+            }}
+          >
+            Cyan
+          </button>
+          <button
+            className="bg-amber-500 text-white p-3 px-5 rounded hover:bg-amber-400 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-amber-500/50 shadow-amber-500/50"
+            onClick={() => {
+              setColor("bg-amber-500");
+              setTextColor("text-amber-500");
+            }}
+          >
+            Amber
+          </button>
+          <button
+            className="bg-rose-700 text-white p-3 px-5 rounded hover:bg-rose-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-rose-500/50 shadow-rose-500/50"
+            onClick={() => {
+              setColor("bg-rose-700");
+              setTextColor("text-rose-700");
+            }}
+          >
+            Rose
+          </button>
+          <button
+            className="bg-slate-700 text-white p-3 px-5 rounded hover:bg-slate-600 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-slate-500/50 shadow-slate-500/50"
+            onClick={() => {
+              setColor("bg-slate-700");
+              setTextColor("text-slate-700");
+            }}
+          >
+            Slate
+          </button>
+          <button
+            className="bg-black text-white p-3 px-5 rounded hover:bg-gray-800 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-black/20 shadow-black/20"
+            onClick={() => {
+              setColor("bg-black");
+              setTextColor("text-black");
+            }}
+          >
+            Black
+          </button>
+          <button
+            className="bg-white text-black p-3 px-5 rounded hover:bg-gray-200 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-white/50 shadow-white/50"
+            onClick={() => {
+              setColor("bg-white");
+              setTextColor("text-white");
+            }}
+          >
+            White
+          </button>
+          <button
+            className="bg-sky-200 text-black p-3 px-5 rounded hover:bg-gray-200 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-sky-500/30 shadow-sky-500/30"
+            onClick={() => {
+              setColor("bg-sky-200");
+              setTextColor("text-sky-200");
+            }}
+          >
+            Sky
+          </button>
+          <button
+            className="bg-yellow-300 text-black p-3 px-5 rounded hover:bg-gray-200 cursor-pointer transition duration-300 hover:-translate-y-2  shadow-2xl hover:shadow-yellow-200/50 shadow-yellow-200/50"
+            onClick={() => {
+              setColor("bg-yellow-300");
+              setTextColor("text-yellow-300");
+            }}
+          >
+            Gold
+          </button>
+          <button
+            className="bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 text-white p-3 px-5 rounded hover:from-pink-400 hover:via-yellow-300 hover:to-blue-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-pink-500/30 shadow-yellow-400/30 shadow-blue-500/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Gradient
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
