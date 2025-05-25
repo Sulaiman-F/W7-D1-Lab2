@@ -7,9 +7,9 @@ function App() {
 
   return (
     <div
-      className={`flex flex-col gap-10 items-center justify-center h-[150vh] md:h-screen transition duration-300 ${color}`}
+      className={`flex flex-col gap-10 items-center justify-center h-[200vh] md:h-screen transition duration-300 ${color}`}
     >
-      <div className="flex flex-col bg-neutral-100 border border-neutral-300 p-2 px-4 md:p-10 rounded-lg shadow-2xl shadow-neutral-300 gap-10">
+      <div className="flex flex-col bg-neutral-100 border border-neutral-300 p-1 px-2 md:p-10 rounded-lg shadow-2xl shadow-neutral-300 gap-10">
         <h1 className="text-2xl font-bold text-center text-shadow-lg ">
           Choose a Background{" "}
           <span className={`${textColor} text-shadow-none`}>Color</span>
@@ -195,7 +195,117 @@ function App() {
               setTextColor("text-white");
             }}
           >
-            Gradient
+            Pink-Yellow-Blue
+          </button>
+          <button
+            className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white p-3 px-5 rounded hover:from-green-300 hover:via-blue-400 hover:to-purple-500 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-green-400/30 shadow-blue-500/30 shadow-purple-600/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Green-Blue-Purple
+          </button>
+          <button
+            className="bg-gradient-to-br from-yellow-400 via-pink-500 to-red-500 text-white p-3 px-5 rounded hover:from-yellow-300 hover:via-pink-400 hover:to-red-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-yellow-400/30 shadow-pink-500/30 shadow-red-500/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-br from-yellow-400 via-pink-500 to-red-500"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Yellow-Pink-Red
+          </button>
+          <button
+            className="bg-gradient-to-tl from-indigo-500 via-sky-400 to-cyan-300 text-white p-3 px-5 rounded hover:from-indigo-400 hover:via-sky-300 hover:to-cyan-200 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-indigo-500/30 shadow-sky-400/30 shadow-cyan-300/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-tl from-indigo-500 via-sky-400 to-cyan-300"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Indigo-Sky-Cyan
+          </button>
+          <button
+            className="bg-gradient-to-tr from-fuchsia-500 via-red-400 to-orange-300 text-white p-3 px-5 rounded hover:from-fuchsia-400 hover:via-red-300 hover:to-orange-200 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-fuchsia-500/30 shadow-red-400/30 shadow-orange-300/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-tr from-fuchsia-500 via-red-400 to-orange-300"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Fuchsia-Red-Orange
+          </button>
+          <button
+            className="bg-gradient-to-bl from-emerald-400 via-cyan-400 to-blue-600 text-white p-3 px-5 rounded hover:from-emerald-300 hover:via-cyan-300 hover:to-blue-500 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-cyan-400/30 shadow-blue-600/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-bl from-emerald-400 via-cyan-400 to-blue-600"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Emerald-Cyan-Blue
+          </button>
+          <button
+            className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 text-white p-3 px-5 rounded hover:from-gray-800 hover:via-gray-600 hover:to-gray-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-gray-900/30 shadow-gray-700/30 shadow-gray-500/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Gray Shades
+          </button>
+          <button
+            className="bg-gradient-to-br from-blue-400 via-green-300 to-lime-400 text-white p-3 px-5 rounded hover:from-blue-300 hover:via-green-200 hover:to-lime-300 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-blue-400/30 shadow-green-300/30 shadow-lime-400/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-br from-blue-400 via-green-300 to-lime-400"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Blue-Green-Lime
+          </button>
+          <button
+            className="bg-gradient-to-t from-pink-400 via-purple-400 to-indigo-400 text-white p-3 px-5 rounded hover:from-pink-300 hover:via-purple-300 hover:to-indigo-300 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-pink-400/30 shadow-purple-400/30 shadow-indigo-400/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-t from-pink-400 via-purple-400 to-indigo-400"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Pink-Purple-Indigo
+          </button>
+          <button
+            className="bg-gradient-to-l from-yellow-300 via-orange-400 to-red-400 text-white p-3 px-5 rounded hover:from-yellow-200 hover:via-orange-300 hover:to-red-300 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-yellow-300/30 shadow-orange-400/30 shadow-red-400/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-l from-yellow-300 via-orange-400 to-red-400"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Yellow-Orange-Red
+          </button>
+          <button
+            className="bg-gradient-to-b from-emerald-400 via-teal-400 to-cyan-500 text-white p-3 px-5 rounded hover:from-emerald-300 hover:via-teal-300 hover:to-cyan-400 cursor-pointer transition duration-300 hover:-translate-y-2 shadow-2xl shadow-emerald-400/30 shadow-teal-400/30 shadow-cyan-500/30"
+            onClick={() => {
+              setColor(
+                "bg-gradient-to-b from-purple-400 via-teal-400 to-cyan-500"
+              );
+              setTextColor("text-white");
+            }}
+          >
+            Purple-Teal-Cyan
           </button>
         </div>
       </div>
